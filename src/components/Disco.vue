@@ -1,8 +1,8 @@
 <template>
-  <section class="m-5">
+  <section>
       <img :src="dettagli.poster" :alt="dettagli.title">
-      <h3>{{dettagli.title}}</h3>
-      <p>
+      <h3 class="m-2 text-center">{{dettagli.title}}</h3>
+      <p class="m-2 text-center">
           {{dettagli.author}}
           {{dettagli.year}}
       </p>
@@ -18,7 +18,12 @@ export default {
 
 <style lang="scss">
 img{
-    width: 200px;
+    width: 100%;
 }
-
+h3{
+    color: white;
+}
+p{
+    color: gray;
+}
 </style>
